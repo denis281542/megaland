@@ -266,14 +266,49 @@
   text-align: center;
   line-height: 28px;
   letter-spacing: 1px;
+  margin-bottom: 35px;
 }
 .birthdays__content {
   max-width: 1200px;
   width: 100%;
 }
-.birthdays__card img {
+.birthdays__list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 20px;
+  margin-bottom: 90px;
+}
+.birthdays__btn {
+  text-transform: lowercase;
+  background-color: #3e2d8b;
+  padding: 22px 60px;
+}
+
+.card {
+  max-width: 260px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.card img {
   width: 195px;
   height: 195px;
+  align-self: center;
+  margin-bottom: 20px;
+}
+.card__title {
+  font-size: 16px;
+  line-height: 1.35;
+  margin-bottom: 8px;
+}
+.card__description {
+  font-size: 14px;
+  line-height: 1.55;
+  text-align: left;
+}
+.card--hidden {
+  display: none;
 }
 
 /* Media queris */
