@@ -84,6 +84,7 @@
 .offers {
   background-color: #ededed;
   padding-bottom: 75px;
+  padding-top: 40px;
 }
 .offers__title, .offers__description {
   text-align: center;
@@ -226,6 +227,7 @@
   font-size: 24px;
   line-height: 1.35;
   padding-bottom: 30px;
+  padding-top: 30px;
 }
 .birthdays__description {
   font-size: 14px;
@@ -282,6 +284,7 @@
   text-transform: lowercase;
   background-color: #3e2d8b;
   padding: 22px 60px;
+  margin-bottom: 75px;
 }
 
 .card {
@@ -309,6 +312,65 @@
 }
 .card--hidden {
   display: none;
+}
+
+.price {
+  margin: 0 auto;
+  font-size: 18px;
+  max-width: 760px;
+  width: 100%;
+  line-height: 1.55;
+  text-align: left;
+  border-collapse: collapse;
+  color: #4d4c4c;
+}
+.price th, .price td {
+  padding: 20px;
+}
+.price th {
+  background: #f0f0f0;
+}
+.price__subtitle {
+  font-weight: 700;
+}
+.price tr {
+  background: #f0f0f0;
+}
+.price tr:nth-child(2n+1) {
+  background-color: #fff;
+}
+
+/* Phone down */
+.down {
+  padding: 10px 0 75px;
+}
+.down .phone__btn {
+  margin-bottom: 0;
+}
+
+/* Footer */
+/* Footer */
+.footer {
+  background-color: #1b1340;
+}
+.footer__inner {
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 30px 20px 45px;
+}
+.footer__logo {
+  max-width: 150px;
+  width: 100%;
+  padding-bottom: 22px;
+}
+.footer__description, .footer__feedback {
+  opacity: 0.7;
+  line-height: 26px;
+  letter-spacing: 1px;
+  color: #d6d6d6;
+  font-size: 14px;
 }
 
 /* Media queris */
@@ -420,6 +482,19 @@
   .item__description, .item__li, .item .bonus, .item strong {
     font-size: 12px;
   }
+
+  .birthdays__list {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .card__title {
+    font-size: 14px;
+  }
+  .card__description {
+    font-size: 12px;
+  }
 }
 @media (max-width: 960px) {
   /* Offers */
@@ -436,6 +511,19 @@
 
   .phone__number {
     font-size: 72px;
+  }
+
+  .birthdays {
+    padding: 0 20px;
+  }
+  .birthdays__list {
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 20px;
+    margin-bottom: 90px;
+  }
+
+  .card {
+    max-width: 230px;
   }
 }
 @media (max-width: 640px) {
@@ -463,6 +551,14 @@
 
   .phone__number {
     font-size: 60px;
+  }
+
+  /* Birthdays*/
+  .birthdays {
+    padding: 0 15px;
+  }
+  .birthdays__list {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 @media (max-width: 480px) {
@@ -510,6 +606,47 @@
   .phone__btn {
     padding: 20px 60px;
     margin-bottom: 45px;
+  }
+
+  /* Birthdays*/
+  .birthdays {
+    padding: 0 15px;
+  }
+  .birthdays__title {
+    font-size: 19px;
+    padding-bottom: 12px;
+    padding-top: 20px;
+  }
+  .birthdays__description {
+    line-height: 22px;
+    padding-bottom: 5px;
+  }
+  .birthdays__list {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    margin-bottom: 30px;
+  }
+  .birthdays__card {
+    align-items: center;
+  }
+  .birthdays__btn {
+    margin-bottom: 30px;
+  }
+
+  .card__description {
+    text-align: center;
+  }
+
+  .price {
+    font-size: 14px;
+  }
+  .price td {
+    padding: 10px;
+  }
+
+  /* Down */
+  .down {
+    padding-bottom: 35px;
   }
 }
 /* Animations */
