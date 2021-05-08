@@ -1,4 +1,4 @@
-console.log('l');
+/* Menu */
 let toggleBtn = document.querySelector('.menu__toggle')
 let menuActive = document.querySelector('.menu')
 let menuLeft = document.querySelector('.menu__left')
@@ -12,3 +12,14 @@ function toggleActive() {
 }
 
 toggleBtn.addEventListener('click', toggleActive)
+
+/* Show item btn */
+let showBtn = document.getElementById('show-btn')
+let cardHidden = document.querySelector('.card__wrapper')
+
+function showItem() {
+  this.style.display = 'none'
+  cardHidden.classList.remove('card--hidden')
+}
+
+showBtn.addEventListener('click', showItem)
