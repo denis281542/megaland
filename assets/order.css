@@ -415,6 +415,20 @@
   border-radius: 0.25rem;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
+.modal__btn {
+  color: #fff;
+  border: none;
+  font-size: 14px;
+  line-height: 1.6;
+  border-radius: 4px;
+  padding: 6px 12px;
+}
+.modal .next-btn {
+  background-color: #3490dc;
+}
+.modal .prev-btn {
+  background-color: #6c757d;
+}
 
 /* Media queris */
 @media (max-width: 1270px) {

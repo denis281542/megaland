@@ -2,6 +2,8 @@ $menu-bg: rgba(0,179,228,1);
 $btn-menu-color: #fff;
 $btn-options-color: rgb(62, 45, 139);
 $table-text-color: #4d4c4c;
+$next-btn-color: #3490dc;
+$disable-btn-color: #6c757d;
 
 * {
   box-sizing: border-box;
@@ -477,6 +479,23 @@ $table-text-color: #4d4c4c;
       border-radius: .25rem;
       transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
     }
+  }
+
+  &__btn {
+    color: #fff;
+    border: none;
+    font-size: 14px;
+    line-height: 1.6;
+    border-radius: 4px;
+    padding: 6px 12px;
+  }
+
+  .next-btn {
+    background-color: $next-btn-color;
+  }
+
+  .prev-btn {
+    background-color: $disable-btn-color;
   }
 }
 
