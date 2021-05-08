@@ -116,3 +116,8 @@ function showSlides(n) {
 let nextBtn = document.querySelector('.next-btn')
 let prevBtn = document.querySelector('.prev-btn')
 
+/* Order route */
+let orderBtn = document.getElementById('order')
+orderBtn.addEventListener('click', () => {
+  location.assign('/order.html')
+})
