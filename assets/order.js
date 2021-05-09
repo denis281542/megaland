@@ -44,15 +44,9 @@ function formatDate(date) {
 let currentDate = formatDate(date)
 dateInput.value = currentDate
 
-/* Close modal window */
-let closeModalBtn = document.getElementById('close-modal-btn')
-let modalWindow = document.querySelector('.modal__wrapper')
-closeModalBtn.addEventListener('click', () => {
-  modalWindow.style.display = 'none'
-})
-
 /* Open modal */
 let offersList = document.querySelector('.offers__list')
+let phoneSection = document.querySelectorAll('.phone')
 
 function openModal(event) {
   let target = event.target.tagName
@@ -63,3 +57,21 @@ function openModal(event) {
 }
 
 offersList.addEventListener('click', openModal)
+
+phoneSection.forEach(el => {
+  el.addEventListener('click', openModal)
+})
+
+/* Close modal window */
+let closeModalBtn = document.getElementById('close-modal-btn')
+let modalWindow = document.querySelector('.modal__wrapper')
+closeModalBtn.addEventListener('click', () => {
+  modalWindow.style.display = 'none'
+})
+
+document.addEventListener('click', e => {
+  if(e.target.classList.contains('modal')) {
+    modalWindow.style.display = 'none'
+  }
+})
+
