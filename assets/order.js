@@ -44,9 +44,22 @@ function formatDate(date) {
 let currentDate = formatDate(date)
 dateInput.value = currentDate
 
-/* Modal window */
+/* Close modal window */
 let closeModalBtn = document.getElementById('close-modal-btn')
 let modalWindow = document.querySelector('.modal__wrapper')
 closeModalBtn.addEventListener('click', () => {
   modalWindow.style.display = 'none'
 })
+
+/* Open modal */
+let offersList = document.querySelector('.offers__list')
+
+function openModal(event) {
+  let target = event.target.tagName
+
+  if(target != 'BUTTON') return
+  
+  modalWindow.style.display = 'block'
+}
+
+offersList.addEventListener('click', openModal)

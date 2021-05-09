@@ -461,6 +461,7 @@ $disable-btn-color: rgb(108, 117, 125);
     width: 100%;
     height: 100%;
     z-index: 999;
+    display: none;
   }
 
   &__form {
@@ -528,11 +529,13 @@ $disable-btn-color: rgb(108, 117, 125);
   .next-btn {
     background-color: $next-btn-color;
     margin-left: 10px;
+    cursor: pointer;
   }
 
   .prev-btn {
     background-color: $disable-btn-color;
     opacity: 0.65;
+    cursor: pointer;
   }
 
   &__btn-close {
