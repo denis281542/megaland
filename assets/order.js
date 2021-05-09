@@ -47,6 +47,7 @@ dateInput.value = currentDate
 /* Open modal */
 let offersList = document.querySelector('.offers__list')
 let phoneSection = document.querySelectorAll('.phone')
+let navLink = document.querySelector('.menu__btn')
 
 function openModal(event) {
   let target = event.target.tagName
@@ -57,6 +58,9 @@ function openModal(event) {
 }
 
 offersList.addEventListener('click', openModal)
+navLink.addEventListener('click', e => {
+  modalWindow.style.display = 'block'
+})
 
 phoneSection.forEach(el => {
   el.addEventListener('click', openModal)

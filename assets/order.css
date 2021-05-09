@@ -24,6 +24,8 @@
 /* Nav */
 .header {
   background-color: #00b3e4;
+  position: fixed;
+  z-index: 1;
 }
 
 .menu {
@@ -678,6 +680,14 @@
   .birthdays__list {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .modal__form {
+    height: auto;
+  }
+
+  .form {
+    padding: 20px;
+  }
 }
 @media (max-width: 480px) {
   /* Offers */
@@ -712,7 +722,7 @@
     padding-bottom: 20px;
   }
   .phone__number {
-    font-size: 42px;
+    font-size: 40px;
     font-family: "Arial";
     padding-bottom: 20px;
   }
@@ -764,7 +774,16 @@
 
   /* Down */
   .down {
-    padding-bottom: 35px;
+    padding: 0 10px 35px;
+  }
+
+  .modal__form {
+    max-width: 85vw;
+    max-height: 80vh;
+  }
+
+  .form {
+    max-width: 288px;
   }
 }
 /* Animations */
