@@ -3,7 +3,7 @@ $btn-menu-color: #fff;
 $btn-options-color: rgb(62, 45, 139);
 $table-text-color: #4d4c4c;
 $next-btn-color: #3490dc;
-$disable-btn-color: #6c757d;
+$disable-btn-color: rgb(108, 117, 125);
 
 * {
   box-sizing: border-box;
@@ -445,18 +445,47 @@ $disable-btn-color: #6c757d;
 
 /* Modal */
 .modal {
-  &__form {
-    max-width: 400px;
+  background-color: rgba(0,0,0,.6);
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+
+  &__wrapper {
+    position: fixed;
+    left: 0;
+    top: 0;
     width: 100%;
-    height: 366px;
-    margin: 60px auto;
-    // padding: 60px 280px;
+    height: 100%;
+    z-index: 999;
+  }
+
+  &__form {
+    max-width: 70vw;
+    width: 100%;
+    max-height: 95vh;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    background-color: #f8fafc;
+    align-items: center;
+    justify-content: center;
+    position: relative;
   }
 
   &__field {
     display: flex;
     flex-direction: column;
     margin-bottom: 16px;
+    max-width: 400px;
+    width: 100%;
+
+    &:nth-child(4) {
+      margin-bottom: 0;
+    }
 
     label {
       margin-bottom: 8px;
@@ -468,7 +497,8 @@ $disable-btn-color: #6c757d;
     }
 
     input {
-      padding: .375rem .75rem;
+      padding: 6px 16px;
+      cursor: text;
       font-size: .9rem;
       font-weight: 400;
       line-height: 1.6;
@@ -479,6 +509,11 @@ $disable-btn-color: #6c757d;
       border-radius: .25rem;
       transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
     }
+  }
+
+  &__buttons {
+    align-self: flex-end;
+    margin-top: 46px;
   }
 
   &__btn {
@@ -492,11 +527,37 @@ $disable-btn-color: #6c757d;
 
   .next-btn {
     background-color: $next-btn-color;
+    margin-left: 10px;
   }
 
   .prev-btn {
     background-color: $disable-btn-color;
+    opacity: 0.65;
   }
+
+  &__btn-close {
+    border: none;
+    position: absolute;
+    z-index: 9999;
+    right: -10px;
+    top: -10px;
+    background-color: transparent;
+    cursor: pointer;
+
+    i {
+      color: #fff;
+      font-size: 32px;
+      line-height: 0.8;
+      background-color: #ff0073;
+    }
+  }
+}
+
+.form {
+  max-width: 400px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Media queris */

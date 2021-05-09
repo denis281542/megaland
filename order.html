@@ -408,30 +408,41 @@
     </div>
   </footer>
 
-  <div class="modal">
-    <form class="modal__form">
-      <div class="modal__field">
-        <label for="date">Дата проведения праздника</label>
-        <input 
-          id="date" 
-          type="date"
-        >
+  <div class="modal__wrapper">
+    <div class="modal">
+      <div class="modal__form">
+        <form class="form">
+          <div class="modal__field">
+            <label for="date">Дата проведения праздника</label>
+            <input 
+              id="date" 
+              type="date"
+            >
+          </div>
+          <div class="modal__field">
+            <label for="name">ФИО</label>
+            <input id="name" type="text" placeholder="Иванов Иван Иванович">
+          </div>
+          <div class="modal__field">
+            <label for="phone">Мобильный телефон</label>
+            <input id="phone" type="tel" placeholder="89991234567">
+          </div>
+          <div class="modal__field">
+            <label for="email">E-mail</label>
+            <input id="email" type="email" placeholder="email@emial.ru">
+          </div>
+          <div class="modal__buttons">
+            <button class="modal__btn prev-btn">Назад</button>
+            <button class="modal__btn next-btn">Далее</button>
+          </div>
+        </form>
+      
+        <button id="close-modal-btn" class="modal__btn-close">
+          <i class="far fa-window-close"></i>
+        </button>
       </div>
-      <div class="modal__field">
-        <label for="name">ФИО</label>
-        <input id="name" type="text" placeholder="Иванов Иван Иванович">
-      </div>
-      <div class="modal__field">
-        <label for="phone">Мобильный телефон</label>
-        <input id="phone" type="tel" placeholder="89991234567">
-      </div>
-      <div class="modal__field">
-        <label for="email">E-mail</label>
-        <input id="email" type="email" placeholder="email@emial.ru">
-      </div>
-      <button class="modal__btn prev-btn">Назад</button>
-      <button class="modal__btn next-btn">Далее</button>
-    </form>
+      
+    </div>
   </div>
 
   <script src="/assets/order.js"></script>
