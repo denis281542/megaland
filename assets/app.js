@@ -1,3 +1,5 @@
+// import {back} from '/utils'
+
 /*Menu*/
 let navToggle = document.getElementById('nav-toggle')
 let burger = document.querySelector('.burger')
