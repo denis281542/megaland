@@ -275,127 +275,15 @@
 }
 
 /* Attractions */
-/* .attractions {
-  background-color: #fafafa;
-}
-
-.attractions-wrapper {
-  max-width: 1309px;
-  margin: 0 auto;
-  flex-wrap: wrap;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
-  color: #333333;
-}
-
-.attractions-header {
-  max-width: 560px;
-  font-size: 20px;
-  padding-bottom: 45px;
-}
-
-.attractions-list {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 100%;
-}
-
-.attractions-title {
-  font-size: 24px;
-  line-height: 1.5;
-  font-weight: 400;
-}
-
-.attractions-item {
-  list-style: none;
-  margin-right: 40px;
-  margin-bottom: 90px;
-  border-radius: 3px;
-  box-shadow: 0 0 0 1px #e0dfde;
-}
-
-.attractions-img {
-  list-style: none;
-  width: 100%;
-  width: 396px;
-  height: 396px;
-  margin-bottom: 20px;
-  background-position: center;
-  transition: .5s all;
-}
-
-.attractions-1 {
-  background: url('images/attraction1.jpg');
-}
-
-.attractions-1:hover {
-  background: url('images/attraction1-1.jpg');
-}
-
-.attractions-2 {
-  background: url('images/attraction2.jpg');
-}
-
-.attractions-2:hover {
-  background: url('images/attraction2-1.jpg');
-}
-
-.attractions-3 {
-  background: url('images/attraction3.jpg');
-}
-
-.attractions-3:hover {
-  background: url('images/attraction3-1.jpg');
-  background-position: center;
-
-}
-
-.attractions-4 {
-  background: url('images/attraction4.jpg');
-}
-
-.attractions-4:hover {
-  background: url('images/attraction4-1.jpg');
-  background-position: center;
-}
-
-.attractions-5 {
-  background: url('images/attraction5.jpg');
-}
-
-.attractions-5:hover {
-  background: url('images/attraction5-1.jpg');
-  background-position: center;
-}
-
-.attractions-link {
-  color: #444444;
-  text-decoration: none;
-}
-
-.attractions-description {
-  font-weight: 700;
-  line-height: 1.35;
-} */
 .attractions {
-  background-color: #fafafa;
   overflow: hidden;
   max-width: 1200px;
   margin: 0 auto;
 }
 
-.attractions-wrapper {
-  max-width: 1309px;
-  margin: 0 auto;
-  flex-wrap: wrap;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
-  color: #333333;
+.attractions__wrapper {
+  background-color: #fafafa;
+  padding: 0 20px;
 }
 
 .attractions-header {
@@ -936,6 +824,10 @@
 
   .item-title {
     margin-bottom: 5px;
+  }
+
+  .attractions__wrapper {
+    padding: 0;
   }
 
   .attractions-item {
