@@ -333,46 +333,46 @@
 }
 
 .attractions-1 {
-  background: url('/assets/images/attraction1-1.jpg');
+  background: url('/assets/images/attraction1.jpg');
 }
 
 .attractions-1:hover {
-  background: url('images/attraction1-1.jpg');
+  background: url('/assets/images/attraction1-1.jpg');
 }
 
 .attractions-2 {
-  background: url('images/attraction2.jpg');
+  background: url('/assets/images/attraction2.jpg');
 }
 
 .attractions-2:hover {
-  background: url('images/attraction2-1.jpg');
+  background: url('/assets/images/attraction2-1.jpg');
 }
 
 .attractions-3 {
-  background: url('images/attraction3.jpg');
+  background: url('/assets/images/attraction3.jpg');
 }
 
 .attractions-3:hover {
-  background: url('images/attraction3-1.jpg');
+  background: url('/assets/images/attraction3-1.jpg');
   background-position: center;
 
 }
 
 .attractions-4 {
-  background: url('images/attraction4.jpg');
+  background: url('/assets/images/attraction4.jpg');
 }
 
 .attractions-4:hover {
-  background: url('images/attraction4-1.jpg');
+  background: url('/assets/images/attraction4-1.jpg');
   background-position: center;
 }
 
 .attractions-5 {
-  background: url('images/attraction5.jpg');
+  background: url('/assets/images/attraction5.jpg');
 }
 
 .attractions-5:hover {
-  background: url('images/attraction5-1.jpg');
+  background: url('/assets/images/attraction5-1.jpg');
   background-position: center;
 }
 
@@ -435,7 +435,7 @@
 }
 
 .cafe-bg {
-  background: url('images/cafe-bg.jpg');
+  background: url('/assets/images/cafe-bg.jpg');
   height: 560px;
   width: 100%;
   background-size: cover;

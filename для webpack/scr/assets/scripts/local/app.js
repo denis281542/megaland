@@ -121,5 +121,5 @@ let prevBtn = document.querySelector('.prev-btn')
 /* Order route */
 let orderBtn = document.getElementById('order')
 orderBtn.addEventListener('click', () => {
-  location.assign('/order.html')
+  location.assign('/assets/templates/pages/order.html')
 })
