@@ -592,23 +592,31 @@ $disable-btn-color: rgb(108, 117, 125);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    height: 75px;
+    transition: all 1s;
+    position: relative;
 
     img {
       width: 140px;
       margin: 0;
       position: absolute;
+      top: 20px;
+      left: 20px;
     }
     
     &--active {
       display: flex;
       flex-direction: column;
       align-items: baseline;
+      height: 500px;
+      padding-top: 85px;
     }
 
     &__left, &__right {
-      display: none;
+      opacity: 0;
 
       &--active {
+        opacity: 1;
         display: block;
         margin: 0 auto;
         width: auto;
@@ -634,7 +642,8 @@ $disable-btn-color: rgb(108, 117, 125);
       width: 22px;
       background-color: #fff;
       position: absolute;
-      right: 0;
+      right: 10px;
+      top: 10px;
       margin: 25px;
       transition: .5s;
 
@@ -661,7 +670,7 @@ $disable-btn-color: rgb(108, 117, 125);
       &--active {
         background-color: transparent;
         position: absolute;
-        right: 0;  
+        right: 10px;  
         top: 13px;
         
         &::before {
@@ -936,6 +945,17 @@ $disable-btn-color: rgb(108, 117, 125);
 
 @keyframes fade {
   from {opacity: .4} 
+  to {opacity: 1}
+}
+
+.smooth {
+  animation-name: smooth;
+  animation-duration: 1.5s;
+  animation-delay: 1s;
+}
+
+@keyframes smooth {
+  from {opacity: 0} 
   to {opacity: 1}
 }
 

@@ -7,8 +7,11 @@ let menuRigth = document.querySelector('.menu__right')
 function toggleActive() {
   this.classList.toggle('menu__toggle--active')
   menuActive.classList.toggle('menu--active')
-  menuLeft.classList.toggle('menu__left--active')
-  menuRigth.classList.toggle('menu__right--active')
+
+  setTimeout(function() {
+    menuLeft.classList.toggle('menu__left--active')
+    menuRigth.classList.toggle('menu__right--active')
+  }, 1000)
 }
 
 toggleBtn.addEventListener('click', toggleActive)

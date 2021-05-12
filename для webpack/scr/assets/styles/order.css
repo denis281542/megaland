@@ -516,21 +516,29 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    height: 75px;
+    transition: all 1s;
+    position: relative;
   }
   .menu img {
     width: 140px;
     margin: 0;
     position: absolute;
+    top: 20px;
+    left: 20px;
   }
   .menu--active {
     display: flex;
     flex-direction: column;
     align-items: baseline;
+    height: 500px;
+    padding-top: 85px;
   }
   .menu__left, .menu__right {
-    display: none;
+    opacity: 0;
   }
   .menu__left--active, .menu__right--active {
+    opacity: 1;
     display: block;
     margin: 0 auto;
     width: auto;
@@ -552,7 +560,8 @@
     width: 22px;
     background-color: #fff;
     position: absolute;
-    right: 0;
+    right: 10px;
+    top: 10px;
     margin: 25px;
     transition: 0.5s;
   }
@@ -577,7 +586,7 @@
   .menu__toggle--active {
     background-color: transparent;
     position: absolute;
-    right: 0;
+    right: 10px;
     top: 13px;
   }
   .menu__toggle--active::before {
@@ -811,6 +820,20 @@
 @keyframes fade {
   from {
     opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.smooth {
+  animation-name: smooth;
+  animation-duration: 1.5s;
+  animation-delay: 1s;
+}
+
+@keyframes smooth {
+  from {
+    opacity: 0;
   }
   to {
     opacity: 1;
