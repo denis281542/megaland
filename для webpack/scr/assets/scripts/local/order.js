@@ -8,10 +8,16 @@ function toggleActive() {
   this.classList.toggle('menu__toggle--active')
   menuActive.classList.toggle('menu--active')
 
+  if(!menuLeft.classList.contains('menu__left--active') &&
+  !menuRigth.classList.contains('menu__right--active')) {
   setTimeout(function() {
-    menuLeft.classList.toggle('menu__left--active')
-    menuRigth.classList.toggle('menu__right--active')
-  }, 1000)
+      menuLeft.classList.add('menu__left--active')
+      menuRigth.classList.add('menu__right--active')
+    }, 1000)
+  } else {
+    menuLeft.classList.remove('menu__left--active')
+    menuRigth.classList.remove('menu__right--active')
+  }
 }
 
 toggleBtn.addEventListener('click', toggleActive)
