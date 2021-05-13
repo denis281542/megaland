@@ -3,10 +3,13 @@ let toggleBtn = document.querySelector('.menu__toggle')
 let menuActive = document.querySelector('.menu')
 let menuLeft = document.querySelector('.menu__left')
 let menuRigth = document.querySelector('.menu__right')
+let menuBg = document.querySelector('.header__menu-bg')
+let header = document.querySelector('.header')
 
 function toggleActive() {
-  this.classList.toggle('menu__toggle--active')
+  toggleBtn.classList.toggle('menu__toggle--active')
   menuActive.classList.toggle('menu--active')
+  menuBg.classList.toggle('header__menu-bg--active')
 
   if(!menuLeft.classList.contains('menu__left--active') &&
   !menuRigth.classList.contains('menu__right--active')) {
@@ -20,7 +23,14 @@ function toggleActive() {
   }
 }
 
+function closeMenu(e) {
+  if(e.target.classList.contains('header__menu-bg--active')) {
+    !toggleActive()
+  }
+}
+
 toggleBtn.addEventListener('click', toggleActive)
+menuBg.addEventListener('click', closeMenu)
 
 /* Show item btn */
 let showBtn = document.getElementById('show-btn')
