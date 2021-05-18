@@ -1,3 +1,5 @@
+import  "./style.css"
+
 /*Menu*/
 let navToggle = document.getElementById('nav-toggle')
 let burger = document.querySelector('.burger')

@@ -16,5 +16,21 @@ module.exports = {
       template: './src/assets/templates/pages/index.html'
     })
   ],
+  module: {
+    rules: [
+      {
+        test: /\.css$/i,
+        use: ["style-loader", "css-loader"],
+      },
+      {
+        test: /\.(png|jpg)$/i,
+        use: ['file-loader'],
+      },
+      {
+        test: /\.(eot|ttf|woff|woff2)$/,
+        use: ['file-loader?name=./src/fonts/fonts/geometria-medium.[ttf]']
+      },
+    ],
+  },
   mode: 'development'
 }
